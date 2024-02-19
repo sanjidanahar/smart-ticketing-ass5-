@@ -2,222 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Ticketing</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Ticketing</title>
 
-    <!-- daisyUI  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyUI  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-        <!-- css -->
-        <style>
-          p {
-            font-family: Inter;
-          }
-        </style>
+  <!-- css -->
+  <style>
+    p {
+      font-family: Inter;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- header section -->
-    <header>
+  <!-- header section -->
+  <header>
 
-        <!-- navbar section -->
+    <!-- navbar section -->
 
-        <nav class="navbar bg-base-100 lg:mb-8">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost lg:text-5xl text-2xl text-black font-bold"
-                >P-Ticket</a
-              >
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn text-[#1DD100] bg-[#c8f5c1] border border-[#1DD100]"
-                >Bus <img src="images/bus-icon.png"
-              /></a>
-            </div>
-          </nav>
-    
-
-        <!-- banner section -->
-        <div>
-            <div
-              class="bg-[url('images/banner.png')] flex items-center justify-center lg:p-24 p-8 text-center bg-no-repeat bg-cover bg-center rounded-3xl"
-            >
-              <div class="flex flex-col justify-center items-center lg:gap-8 gap-4">
-                <h2 class="lg:text-5xl text-3xl text-white font-bold">
-                  End-to-End Travel with
-                  <span class="text-[#1DD100] lg:mt-6 block drop-shadow-2xl"
-                    >P-Paribahan</span
-                  >
-                </h2>
-                <p class="text-white lg:w-3/4">
-                    Yes, you can run unit tests and view the results directly within the app. The 
-                    integrated testing features allow for a streamlined.
-                </p>
-                <a
-                  class="btn text-black bg-[#1DD100] w-fit border-none"
-                  href="#main"
-                >
-                  Buy Tickets
-                </a>
-              </div>
-            </div>
-            <div
-              class="flex flex-row flex-wrap items-center justify-center lg:-translate-y-1/2 gap-8 mt-8 lg:m-0"
-            >
-              <div
-                class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl"
-              >
-                <img src="images/people.png" />
-                <div>
-                  <h2 class="text-4xl font-bold mb-1">500K+</h2>
-                  <p class="text-gray-500">Registered users</p>
-                </div>
-              </div>
-              <div
-                class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl"
-              >
-                <img src="images/ticket-cupon.png" />
-                <div>
-                  <h2 class="text-4xl font-bold mb-1">1.7 lacks</h2>
-                  <p class="text-gray-500">Tickets sold</p>
-                </div>
-              </div>
-              <div
-                class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl"
-              >
-                <img src="images/stoppage.png" />
-                <div>
-                  <h2 class="text-4xl font-bold mb-1">80K+</h2>
-                  <p class="text-gray-500">Rental partners</p>
-                </div>
-              </div>
-            </div>
+    <nav class="navbar bg-base-100 lg:mb-8">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-    </header>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost lg:text-5xl text-2xl text-black font-bold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-[#1DD100] bg-[#c8f5c1] border border-[#1DD100]">Bus <img src="images/bus-icon.png" /></a>
+      </div>
+    </nav>
 
 
-   <!-- main start -->
-    <main>
-      <!-- Coupon start -->
-      <section class="lg:px-24 px-4">
-        <h2 class="text-center text-5xl font-semibold my-8">
-          Best offers for you
-        </h2>
-        <div
-          class="flex flex-col lg:flex-row gap-8 items-center justify-center"
-        >
-          <!-- card 1 -->
-          <div class="flex flex-row bg-[#FFBF0F] rounded-3xl flex-1">
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
-              <h3 class="lg:text-4xl text-2xl font-bold font-[Inter]">
-                15% OFF
-              </h3>
-              <p class="font-semibold lg:text-lg">on your next purchase</p>
-              <p class="text-gray-600">use by January 2024</p>
-            </div>
-            <img src="images/cupon-devider.png" />
-            <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
-              <h3 class="lg:text-3xl text-2xl font-semibold select-all">
-                NEW15
-              </h3>
-              <p class="text-gray-600">Coupon Code</p>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="flex flex-row bg-[#F78C9C] rounded-3xl flex-1">
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
-              <h3 class="lg:text-4xl text-2xl font-bold font-[Inter]">
-                20% OFF
-              </h3>
-              <p class="font-semibold lg:text-lg">on your next purchase</p>
-              <p class="text-gray-600">use by January 2024</p>
-            </div>
-            <img src="images/cupon-devider.png" />
-            <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
-              <h3 class="lg:text-3xl text-2xl font-semibold select-all">
-                Couple 20
-              </h3>
-              <p class="text-gray-600">Coupon Code</p>
-            </div>
+    <!-- banner section -->
+    <div>
+      <div
+        class="bg-[url('images/banner.png')] flex items-center justify-center lg:p-24 p-8 text-center bg-no-repeat bg-cover bg-center rounded-3xl">
+        <div class="flex flex-col justify-center items-center lg:gap-8 gap-4">
+          <h2 class="lg:text-5xl text-3xl text-white font-bold">
+            End-to-End Travel with
+            <span class="text-[#1DD100] lg:mt-6 block drop-shadow-2xl">P-Paribahan</span>
+          </h2>
+          <p class="text-white lg:w-3/4">
+            Yes, you can run unit tests and view the results directly within the app. The
+            integrated testing features allow for a streamlined.
+          </p>
+          <a class="btn text-black bg-[#1DD100] w-fit border-none" href="#main">
+            Buy Tickets
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap items-center justify-center lg:-translate-y-1/2 gap-8 mt-8 lg:m-0">
+        <div class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl">
+          <img src="images/people.png" />
+          <div>
+            <h2 class="text-4xl font-bold mb-1">500K+</h2>
+            <p class="text-gray-500">Registered users</p>
           </div>
         </div>
-        <button
-          class="btn border border-[#1DD100] my-12 mx-auto block text-[#1DD100] bg-white font-bold"
-        >
-          See All Offers
-        </button>
-      </section>
-
-      </main>
-    <!-- foooter section -->
-    <footer class="bg-gray-800 text-white lg:p-24 p-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div>
-                <h2 class="text-3xl font-black">P-Ticket</h2>
-                <p class="w-3/5 text-gray-300 my-4"> P-Ticket is a digital platform to make your daily commuting better</p>
-            </div>
-            <div class="lg:text-right">
-                <h4 class="font-semibold text-lg pr-4">Download our app</h4>
-                <img src="images/play-store.png" class="h-20 btn btn-ghost lg:ml-auto" alt="">
-            </div>
+        <div class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl">
+          <img src="images/ticket-cupon.png" />
+          <div>
+            <h2 class="text-4xl font-bold mb-1">1.7 lacks</h2>
+            <p class="text-gray-500">Tickets sold</p>
+          </div>
         </div>
-        <div class="border-t-2 border-dashed border-gray-500 mt-4 pt-6 flex flew-col lg:flex-row justify-between gap-4">
-            <p class="text-FFFFFFB3-400">  &copy; All rights reserved, P-Ticket services limited 2024</p>
-            <div class="text-white-400 flew flex-wrap gap-4">
-                <a href="#" class="link">Terms & condition</a>
-                <a href="#" class="link">Return & refund policy </a>
-                <a href="#" class="link">Privarcy Policy</a>
-            </div>
+        <div class="bg-white shadow-md border-b-4 border-[#1DD100] flex flex-row gap-6 p-6 rounded-3xl">
+          <img src="images/stoppage.png" />
+          <div>
+            <h2 class="text-4xl font-bold mb-1">80K+</h2>
+            <p class="text-gray-500">Rental partners</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </header>
 
-    <!-- Connected Js -->
-    <script src="js/main.js"></script>
-    <script src="js/utility.js"></script>
+
+  <!-- main section -->
+  <main>
+    <!-- Coupon section-->
+    <section class="lg:px-24 px-4">
+      <h2 class="text-center text-5xl font-semibold my-8">Best offers for you
+      </h2>
+      <div class="flex flex-col lg:flex-row gap-8 items-center justify-center">
+
+        <!-- card 1 -->
+        <div class="flex flex-row bg-[#FFBF0F] rounded-3xl flex-1">
+          <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
+            <h3 class="lg:text-4xl text-2xl font-bold font-[Inter]">15% OFF</h3>
+            <p class="font-semibold lg:text-lg">on your next purchase</p>
+            <p class="text-gray-600">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" />
+          <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
+            <h3 class="lg:text-3xl text-2xl font-semibold select-all">NEW15</h3>
+            <p class="text-gray-600">Coupon Code</p>
+          </div>
+        </div>
+        
+        <!-- card 2 -->
+        <div class="flex flex-row bg-[#F78C9C] rounded-3xl flex-1">
+          <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
+            <h3 class="lg:text-4xl text-2xl font-bold font-[Inter]">20% OFF </h3>
+            <p class="font-semibold lg:text-lg">on your next purchase</p>
+            <p class="text-gray-600">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" />
+          <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
+            <h3 class="lg:text-3xl text-2xl font-semibold select-all">Couple 20 </h3>
+            <p class="text-gray-600">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn border border-[#1DD100] my-12 mx-auto block text-[#1DD100] bg-white font-bold">See All
+        Offers</button>
+    </section>
+
+    <!-- Poribohon section -->
+    <section id="main" class="bg-gray-50 border-t-4 border-[#1DD100] lg:p-24 p-4 rounded-t-[100px]">
+      <h1 class="lg:text-5xl text-3xl text-center font-semibold">P-Poribohon</h1>
+      <p>Yes, you can run unit tests and view the results directly within the app. The integrated 
+        testing features allow for a streamlined.</p>
+    </section>
+
+
+  </main>
+  <!-- foooter section -->
+  <footer class="bg-gray-800 text-white lg:p-24 p-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-black">P-Ticket</h2>
+        <p class="w-3/5 text-gray-300 my-4"> P-Ticket is a digital platform to make your daily commuting better</p>
+      </div>
+      <div class="lg:text-right">
+        <h4 class="font-semibold text-lg pr-4">Download our app</h4>
+        <img src="images/play-store.png" class="h-20 btn btn-ghost lg:ml-auto" alt="">
+      </div>
+    </div>
+    <div class="border-t-2 border-dashed border-gray-500 mt-4 pt-6 flex flew-col lg:flex-row justify-between gap-4">
+      <p class="text-FFFFFFB3-400"> &copy; All rights reserved, P-Ticket services limited 2024</p>
+      <div class="text-white-400 flew flex-wrap gap-4">
+        <a href="#" class="link">Terms & condition</a>
+        <a href="#" class="link">Return & refund policy </a>
+        <a href="#" class="link">Privarcy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Connected Js -->
+  <script src="js/main.js"></script>
+  <script src="js/utility.js"></script>
 </body>
 
 </html>
