@@ -7,7 +7,6 @@ const coupons = {
   NEW15: 15,"Couple 20": 20,
 };
 
-
 // poribohon
 for (const seat of seats) {
   let seatName = seat.innerHTML;
