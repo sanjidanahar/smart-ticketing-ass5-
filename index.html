@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Ticketing</title>
 
   <!-- daisyUI  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -22,7 +21,13 @@
     p {
       font-family: Inter;
     }
+
+    .clicked {
+      background-color: #1dd100;
+      color: #fff;
+    }
   </style>
+  <title>Smart Ticketing</title>
 </head>
 
 <body class="lg:pt-8 font-[Raleway]">
@@ -221,6 +226,8 @@
               <img src="images/circle.png" />
             </button>
           </div>
+
+          <!-- seats -->
           <div id="seats" class="my-4 text-xl flex flex-col gap-4 flex-wrap">
 
             <!-- A -->
@@ -228,12 +235,12 @@
               <div class="w-6 flex items-center justify-center">A</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4 mr-4">
-                  <button class="btn">A1</button>
-                  <button class="btn">A2</button>
+                  <button class="btn" value="a1">A1</button>
+                  <button class="btn" value="a2">A2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">A3</button>
-                  <button class="btn">A4</button>
+                  <button class="btn" value="a3">A3</button>
+                  <button class="btn" value="a4">A4</button>
                 </div>
               </div>
             </div>
@@ -243,12 +250,12 @@
               <div class="w-6 flex items-center justify-center">B</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">B1</button>
-                  <button class="btn">B2</button>
+                  <button class="btn" value="b1">B1</button>
+                  <button class="btn" value="b2">B2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">B3</button>
-                  <button class="btn">B4</button>
+                  <button class="btn" value="b3">B3</button>
+                  <button class="btn" value="b4">B4</button>
                 </div>
               </div>
             </div>
@@ -258,12 +265,12 @@
               <div class="w-6 flex items-center justify-center">C</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">C1</button>
-                  <button class="btn">C2</button>
+                  <button class="btn" value="c4">C1</button>
+                  <button class="btn" value="c4">C2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">C3</button>
-                  <button class="btn">C4</button>
+                  <button class="btn" value="c4">C3</button>
+                  <button class="btn" value="c4">C4</button>
                 </div>
               </div>
             </div>
@@ -273,12 +280,12 @@
               <div class="w-6 flex items-center justify-center">D</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">D1</button>
-                  <button class="btn">D2</button>
+                  <button class="btn" value="d1">D1</button>
+                  <button class="btn" value="d2">D2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">D3</button>
-                  <button class="btn">D4</button>
+                  <button class="btn" value="d3">D3</button>
+                  <button class="btn" value="d4">D4</button>
                 </div>
               </div>
             </div>
@@ -288,12 +295,12 @@
               <div class="w-6 flex items-center justify-center">E</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">E1</button>
-                  <button class="btn">E2</button>
+                  <button class="btn" value="e1">E1</button>
+                  <button class="btn" value="e2">E2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">E3</button>
-                  <button class="btn">E4</button>
+                  <button class="btn" value="e3">E3</button>
+                  <button class="btn" value="e4">E4</button>
                 </div>
               </div>
             </div>
@@ -303,12 +310,12 @@
               <div class="w-6 flex items-center justify-center">F</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">F1</button>
-                  <button class="btn">F2</button>
+                  <button class="btn" value="f1">F1</button>
+                  <button class="btn" value="f2">F2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">F3</button>
-                  <button class="btn">F4</button>
+                  <button class="btn" value="f3">F3</button>
+                  <button class="btn" value="f4">F4</button>
                 </div>
               </div>
             </div>
@@ -318,12 +325,12 @@
               <div class="w-6 flex items-center justify-center">G</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">G1</button>
-                  <button class="btn">G2</button>
+                  <button class="btn" value="g1">G1</button>
+                  <button class="btn" value="g2">G2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">G3</button>
-                  <button class="btn">G4</button>
+                  <button class="btn" value="g3">G3</button>
+                  <button class="btn" value="g4">G4</button>
                 </div>
               </div>
             </div>
@@ -333,12 +340,12 @@
               <div class="w-6 flex items-center justify-center">H</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">H1</button>
-                  <button class="btn">H2</button>
+                  <button class="btn" value="h1">H1</button>
+                  <button class="btn" value="h2">H2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">H3</button>
-                  <button class="btn">H4</button>
+                  <button class="btn" value="h3">H3</button>
+                  <button class="btn" value="h4">H4</button>
                 </div>
               </div>
             </div>
@@ -348,12 +355,12 @@
               <div class="w-6 flex items-center justify-center">I</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">I1</button>
-                  <button class="btn">I2</button>
+                  <button class="btn" value="i1">I1</button>
+                  <button class="btn" value="i2">I2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">I3</button>
-                  <button class="btn">I4</button>
+                  <button class="btn" value="i3">I3</button>
+                  <button class="btn" value="i4">I4</button>
                 </div>
               </div>
             </div>
@@ -363,24 +370,38 @@
               <div class="w-6 flex items-center justify-center">J</div>
               <div class="flex justify-between flex-1">
                 <div class="flex gap-4">
-                  <button class="btn">J1</button>
-                  <button class="btn">J2</button>
+                  <button class="btn" value="j1">J1</button>
+                  <button class="btn" value="j2">J2</button>
                 </div>
                 <div class="flex gap-4">
-                  <button class="btn">J3</button>
-                  <button class="btn">J4</button>
+                  <button class="btn" value="j3">J3</button>
+                  <button class="btn" value="j4">J4</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- checkout section -->
         <div class="pl-4 flex-1">
-          <h3 class="text-3xl font-bold border-b-2 border-dashed w-full pb-4 font-[Raleway]">Select Your Seat</h3>
+          <h3 class="text-3xl font-bold w-full pb-4 font-[Raleway]">Select Your Seat</h3>
           <div class="bg-gray-50 p-6 mt-6 rounded-3xl">
-            <div class="flex justify-between border-b-2 border-dashed text-lg font-semibold pb-2 border-gray-300 mb-2">
-              <span>Seat<span class="badge bg-[#1DD100]" id="seat-count">0</span></span>
+            <div class="flex justify-between pb-2 mb-2">
+
+              <table class="w-full" id="checkout-table">
+                <tbody>
+                  <tr class="border-b-2 border-dashed border-gray-300 text-xl font-semibold">
+                    <th class="text-left"><span>Seat<span class="badge bg-[#1DD100]" id="seat-count">0</span></span>
+                    </th>
+                    <th><span>Class</span></th>
+                    <th class="text-right"><span>Price</span></th>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- <span>Seat<span class="badge bg-[#1DD100]" id="seat-count">0</span></span>
               <span>Class</span>
-              <span>Price</span>
+              <span>Price</span> -->
             </div>
             <div id="selected-list"></div>
             <div class="flex justify-between mt-2 pt-1 border-t-2">
@@ -391,11 +412,15 @@
               <h4 class="font-bold">Discount</h4>
               <h4 class="font-bold">BDT <span id="discount">0</span></h4>
             </div>
-            <label class="p-2 bg-white flex justify-between items-center rounded-2xl mt-4" for="coupon">
-              <input type="text" id="coupon" placeholder="Have any Coupon?"
-                class="border-none outline-none flex-1 px-2" />
-              <button class="btn bg-[#1DD100] text-white" id="coupon-apply" disabled>Apply</button>
-            </label>
+
+            <form action="">
+              <label class="p-2 bg-white flex justify-between items-center rounded-2xl mt-4" for="coupon">
+                <input type="text" id="coupon" placeholder="Have any Coupon?"
+                  class="border-none outline-none flex-1 px-2" required />
+                <button class="btn bg-[#1DD100] text-white" id="coupon-apply" disabled>Apply</button>
+              </label>
+            </form>
+
             <div class="flex justify-between mt-2 pt-1">
               <h4 class="font-bold">Grand Total</h4>
               <h4 class="font-bold">BDT <span id="grand-total">0</span></h4>
@@ -403,16 +428,19 @@
             <h3 class="text-lg font-bold my-4">
               Passenger Name <span class="text-red-500">*</span>
             </h3>
-            <input type="text" class="py-4 px-6 rounded-lg block w-full border border-gray-300"
-              placeholder="Enter your name" id="name" />
-            <h3 class="text-lg font-bold my-4"> Phone Number <span class="text-red-500">*</span>
-            </h3>
-            <input type="number" class="py-4 px-6 rounded-lg block w-full border border-gray-300"
-              placeholder="Enter your phone number" id="phone" />
-            <h3 class="text-lg font-bold my-4">Email ID</h3>
-            <input type="email" class="py-4 px-6 rounded-lg block w-full border border-gray-300"
-              placeholder="Enter your email id" />
-            <button class="btn text-white w-full my-4" id="apply">Apply</button>
+
+            <form action="" novalidate>
+              <input type="text" class="py-4 px-6 rounded-lg block w-full border border-gray-300"
+                placeholder="Enter your name" id="name" required />
+              <h3 class="text-lg font-bold my-4"> Phone Number <span class="text-red-500">*</span>
+              </h3>
+              <input type="number" class="py-4 px-6 rounded-lg block w-full border border-gray-300"
+                placeholder="Enter your phone number" id="phone" required />
+              <h3 class="text-lg font-bold my-4">Email ID</h3>
+              <input type="email" class="py-4 px-6 rounded-lg block w-full border border-gray-300" placeholder="Enter your email id" id="email" />
+              <button class="btn text-white w-full my-4" id="apply">Apply</button>
+            </form>
+
             <div class="flex flex-col lg:flex-row justify-center lg:gap-4">
               <a href="#" class="link">Terms and Conditions</a>
               <a href="#" class="link">Cancellation Policy</a>
@@ -447,7 +475,9 @@
   </footer>
 
   <!-- success section -->
-  <section class="bg-slate-100 my-8 py-48 pl-48 pr-56 ">
+  <section
+    class="bg-slate-100 fixed top-0 left-0 w-full h-screen flex justify-between items-center opacity-0 invisible transition-all"
+    id="success-msg">
     <div class="border border-white bg-white rounded-lg  w-[778px] h-[481px] mx-auto ">
       <div class="text-center">
         <img class="mx-auto pt-8" src="images/success.png" alt="">
@@ -458,7 +488,7 @@
           travels!<br>
           <span class="font-light ">Shortly you will find a confirmation in your email.</span>
         </p>
-        <button class="bg-[#27AE60] text-center px-16 py-3 rounded-lg">Continue</button>
+        <button class="bg-[#27AE60] text-center px-16 py-3 rounded-lg" id="continue">Continue</button>
       </div>
     </div>
   </section>
